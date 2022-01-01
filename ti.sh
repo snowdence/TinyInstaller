@@ -42,7 +42,10 @@ export setNet='0'
 export tiIso='https://ti.4it.top/installer/free.iso'
 REBOOT="reboot=1"
 
-[ "$EUID" -ne '0' ] && echo "Error:This script must be run as root!" && exit 1;
+if [ "$(id -u)" != "0" ]; then
+	echo "You must be root to execute the script. Exiting."
+	exit 1
+fi
 
 
 
