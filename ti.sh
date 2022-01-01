@@ -196,7 +196,7 @@ menuentry "TinyInstaller" {
 EndOfMessage
 
 if [ ! -f $GRUBDIR/$GRUBFILE ];then
-  echo "Grub config not found $GRUBDIR/$GRUBFILE"
+  echo "Grub config not found $GRUBDIR/$GRUBFILE. TinyInstaller only run on Debian or Ubuntu!"
   exit 2
 fi
 echo "";
