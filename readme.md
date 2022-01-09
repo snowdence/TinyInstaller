@@ -18,6 +18,11 @@ wget https://github.com/4iTeam/TinyInstaller/raw/main/w2012.sh && sh w2012.sh
 
 Mật khẩu sẽ được đăng trong nhóm nhé
 
+## Bản pro
+Mình có bán bản pro chạy được cả trên Oracle, Google Cloud, OVH.
+
+Liên hệ mua http://m.me/100028274061680
+
 ## Hỏi đáp và thông tin thêm
 Kiến Thức VPS: https://www.facebook.com/groups/kienthuc.vps
 
