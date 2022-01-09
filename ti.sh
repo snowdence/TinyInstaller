@@ -106,7 +106,10 @@ getInterface(){
 }
 
 getDisk(){
-  echo $(mount | grep "/ "  | cut -d' ' -f1 | sed -r 's/[0-9]+$//');
+  disks=`lsblk | sed 's/[[:space:]]*$//g' |grep "disk$" |cut -d' ' -f1 |grep -v "fd[0-9]*\|sr[0-9]*" |head -n1`
+  [ -n "$disks" ] || echo ""
+  echo "$disks" |grep -q "/dev"
+  [ $? -eq 0 ] && echo "$disks" || echo "/dev/$disks"
 }
 
 getGrub(){
